@@ -18,7 +18,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 		this._router.events.subscribe((route) => {
 			if (route instanceof NavigationStart) {
 				Helpers.setLoading(true);
-				Helpers.bodyClass('boxed-layout');
+				//Helpers.bodyClass('boxed-layout');
 			}
 			if (route instanceof NavigationEnd) {
 				window.scrollTo(0, 0);
