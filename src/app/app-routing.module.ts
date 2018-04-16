@@ -13,12 +13,11 @@ import { Login4Component } from './pages/login-4/login-4.component';
 import { Login5Component } from './pages/login-5/login-5.component';
 import { LockscreenComponent } from './pages/lockscreen/lockscreen.component';
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
-import { ProfileComponent } from './pages/profile/profile.component';
 import { Error404Component } from './pages/error-404/error-404.component';
 import { Error4042Component } from './pages/error-404-2/error-404-2.component';
 import { Error403Component } from './pages/error-403/error-403.component';
 import { Error500Component } from './pages/error-500/error-500.component';
-import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
+
 
 
 const routes: Routes = [
@@ -35,10 +34,7 @@ const routes: Routes = [
                 path: "dashboard_ecommerce",
                 component: DashboardEcommerceComponent
             },
-            {
-                path: "profile",
-                component: ProfileComponent
-            },
+           
         ]
     },
     {
@@ -85,10 +81,7 @@ const routes: Routes = [
         "path": "error_500",
         "component": Error500Component
     },
-    {
-        "path": "maintenance",
-        "component": MaintenanceComponent
-    },
+  
     {
         "path": "**",
         "redirectTo": "error_404",
@@ -107,12 +100,10 @@ const routes: Routes = [
     Login5Component,
     LockscreenComponent,
     ForgotPasswordComponent,
-    ProfileComponent,
     Error404Component,
     Error4042Component,
     Error403Component,
     Error500Component,
-    MaintenanceComponent,
   ],
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ 
